@@ -1,30 +1,24 @@
-# Flutter Firebase Authentication App
+# Gooleez Service App (Flutter + Firebase)
 
-A Flutter mobile application that implements **Login and Registration functionality** using **Firebase Authentication** with a clean and modern UI.
+## Overview
+Gooleez is a Flutter mobile service application prototype that allows users to login using Firebase Authentication and view available home services.
+
+This project was created as part of my Flutter learning portfolio to practice UI design, authentication, and navigation.
 
 ## Features
-- User Login with Email & Password
-- User Registration with Email & Password
-- Firebase Authentication integration
-- Form validation and error handling
-- Clean and responsive UI
-- Navigation between Login and Register screens
-
+- Splash Screen
+- User Login (Firebase Authentication)
+- Home Screen Service Listing
+- Screen Navigation
+- Clean UI Layout
 
 ## Tech Stack
 - Flutter
 - Dart
 - Firebase Authentication
+- Material UI
 
-## Getting Started
-To run this project locally:
-
-1. Clone the repository
-2. Run `flutter pub get`
-3. Configure Firebase for Android/iOS
-4. Run `flutter run`
-
-## Future Improvements
-- Google Sign-In
-- Forgot Password functionality
-- State management (GetX / BLoC)
+## How to Run
+1. Clone this repository
+2. Run flutter pub get
+3. Run flutter run
