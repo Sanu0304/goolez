@@ -47,7 +47,6 @@ class _LoginpageState extends State<Loginpage> {
         ),
       );
 
-      // 👉 Navigate to HomePage
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => HomePage()),
@@ -86,7 +85,6 @@ class _LoginpageState extends State<Loginpage> {
       body: SafeArea(
         child: Stack(
           children: [
-            // Background Gradient
             Container(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
@@ -100,8 +98,6 @@ class _LoginpageState extends State<Loginpage> {
                 ),
               ),
             ),
-
-            // Blur Layer
             BackdropFilter(
               filter: ImageFilter.blur(sigmaX: 18, sigmaY: 18),
               child: Container(
@@ -109,7 +105,6 @@ class _LoginpageState extends State<Loginpage> {
               ),
             ),
 
-            // Login UI
             Padding(
               padding: const EdgeInsets.all(20),
               child: Column(
@@ -136,7 +131,6 @@ class _LoginpageState extends State<Loginpage> {
 
                   const SizedBox(height: 30),
 
-                  // Email Field
                   TextField(
                     controller: _emailcontroller,
                     decoration: InputDecoration(
@@ -158,7 +152,6 @@ class _LoginpageState extends State<Loginpage> {
 
                   const SizedBox(height: 20),
 
-                  // Password Field
                   TextField(
                     controller: _passwordcontroller,
                     obscureText: _obscurePassword,
@@ -194,7 +187,6 @@ class _LoginpageState extends State<Loginpage> {
 
                   const SizedBox(height: 30),
 
-                  // Login Button
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(

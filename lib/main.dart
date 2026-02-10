@@ -11,6 +11,7 @@ void main() async{
   await Firebase.initializeApp(
     options: AppFirebaseOptions.android,
   );
+  debugPrint('Firebase count:${Firebase.apps.length}');
 
   runApp(const MyApp());
 }
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: SplashScreen(),
     );
   }
 }

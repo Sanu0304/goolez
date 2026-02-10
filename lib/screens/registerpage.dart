@@ -21,7 +21,6 @@ class _RegisterpageState extends State<Registerpage> {
     return Scaffold(
       body: Stack(
         children: [
-          /// BACKGROUND COLORS
           Align(
             alignment: AlignmentDirectional(0, -0.8),
             child: Container(
@@ -39,13 +38,11 @@ class _RegisterpageState extends State<Registerpage> {
             ),
           ),
 
-          /// BLUR EFFECT
           BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 120, sigmaY: 120),
             child: Container(color: Colors.transparent),
           ),
 
-          /// MAIN CARD
           Center(
             child: SingleChildScrollView(
               child: Container(
@@ -61,7 +58,6 @@ class _RegisterpageState extends State<Registerpage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    /// HEADER
                     Text(
                       'Create Account',
                       style: TextStyle(
@@ -72,15 +68,12 @@ class _RegisterpageState extends State<Registerpage> {
                     ),
                     SizedBox(height: 20),
 
-                    /// FULL NAME FIELD
                     buildTextField(
                       'Full Name',
                       Icons.person,
                       controller: _nameController,
                     ),
                     SizedBox(height: 15),
-
-                    /// EMAIL FIELD
                     buildTextField(
                       'Email',
                       Icons.email,
@@ -88,7 +81,6 @@ class _RegisterpageState extends State<Registerpage> {
                     ),
                     SizedBox(height: 15),
 
-                    /// PASSWORD FIELD
                     buildTextField(
                       'Password',
                       Icons.lock,
@@ -97,7 +89,6 @@ class _RegisterpageState extends State<Registerpage> {
                     ),
                     SizedBox(height: 25),
 
-                    /// REGISTER BUTTON
                     GestureDetector(
                       onTap: () async {
                         String name = _nameController.text.trim();
@@ -162,7 +153,6 @@ class _RegisterpageState extends State<Registerpage> {
 
                     SizedBox(height: 20),
 
-                    /// ALREADY HAVE ACCOUNT
                     GestureDetector(
                       onTap: () {
                         Navigator.push(

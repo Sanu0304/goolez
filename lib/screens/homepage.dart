@@ -12,7 +12,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
 
-  // Pages for bottom navigation
   final List<Widget> _pages = const [
     HomeContent(),
     OrdersPage(),
@@ -25,7 +24,6 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: const Color(0xffF1F3FA),
 
-      // -------- BOTTOM NAV BAR --------
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.black,
@@ -55,8 +53,6 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-
-      // -------- PAGE CONTENT --------
       body: SafeArea(
         child: _pages[_selectedIndex],
       ),
@@ -65,7 +61,6 @@ class _HomePageState extends State<HomePage> {
 }
 
 //
-// ================= HOME TAB =================
 //
 class HomeContent extends StatelessWidget {
   const HomeContent({super.key});
@@ -76,7 +71,6 @@ class HomeContent extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
 
-        // -------- TOP HEADER --------
         Container(
           width: double.infinity,
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 25),
@@ -91,7 +85,6 @@ class HomeContent extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
 
-              // LOGO + NAME + MENU
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -122,7 +115,6 @@ class HomeContent extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // SEARCH BAR
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 15),
                 height: 48,
@@ -147,7 +139,6 @@ class HomeContent extends StatelessWidget {
 
         const SizedBox(height: 20),
 
-        // -------- SERVICES TITLE --------
         const Padding(
           padding: EdgeInsets.symmetric(horizontal: 20),
           child: Text(
@@ -158,7 +149,6 @@ class HomeContent extends StatelessWidget {
 
         const SizedBox(height: 10),
 
-        // -------- SERVICES GRID --------
         Expanded(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -188,7 +178,6 @@ class HomeContent extends StatelessWidget {
 }
 
 //
-// ================= ORDERS TAB =================
 //
 class OrdersPage extends StatelessWidget {
   const OrdersPage({super.key});
@@ -205,7 +194,6 @@ class OrdersPage extends StatelessWidget {
 }
 
 //
-// ================= PROMOTIONS TAB =================
 //
 class PromotionsPage extends StatelessWidget {
   const PromotionsPage({super.key});
@@ -222,7 +210,6 @@ class PromotionsPage extends StatelessWidget {
 }
 
 //
-// ================= NOTIFICATIONS TAB =================
 //
 class NotificationsPage extends StatelessWidget {
   const NotificationsPage({super.key});
