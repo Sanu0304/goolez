@@ -22,3 +22,8 @@ This project was created as part of my Flutter learning portfolio to practice UI
 1. Clone this repository
 2. Run flutter pub get
 3. Run flutter run
+
+## Screenshots
+
+### Splash Screen
+![Splash Screen](screenshots/gooleezhomepage.png)
