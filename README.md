@@ -26,7 +26,10 @@ This project was created as part of my Flutter learning portfolio to practice UI
 ## Screenshots
 
 ### Splash Screen
-![Splash Screen](screenshots/gooleezhomepage.png)
+![Splash Screen](screenshots/splashgoleez.png )
 
 ### Login Screen
 ![LOgin Screen](screenshots/gooleezlogin.png)
+
+### Home Screen
+![Home Screen](screenshots/gooleezhomepage.png)
